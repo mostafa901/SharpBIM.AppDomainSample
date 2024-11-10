@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="..\SolutionItems\SharpBIM.Defaults.props" />
+ 
+    <ItemGroup>
+        <Compile Remove="lib\**" />
+        <Compile Remove="packages\**" />
+        <EmbeddedResource Remove="lib\**" />
+        <EmbeddedResource Remove="packages\**" />
+        <None Remove="lib\**" />
+        <None Remove="packages\**" />
+    </ItemGroup>
+ 
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\SharpBIM.Interfaces\SharpBIM.Interfaces.csproj" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <StartAction>Program</StartAction>
+        <StartProgram>D:\Program Files\Autodesk\Revit 2019\Revit.exe</StartProgram>
+        <StartArguments>/language ENG</StartArguments>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <Reference Include="RevitAPI">
+            <HintPath>lib\RevitAPI.dll</HintPath>
+        </Reference>
+        <Reference Include="RevitAPIUI">
+            <HintPath>lib\RevitAPIUI.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="SharpBIMAddin.addin">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+
+        </None>
+    </ItemGroup>
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <Exec Command=" call xcopy /y &quot;$(MSBuildProjectDirectory)\PackageContents.xml&quot; &quot;C:\ProgramData\Autodesk\ApplicationPlugins\$(MSBuildProjectName).bundle\PackageContents.xml*&quot;&#xD;&#xA;&#xD;&#xA; call xcopy /y /s &quot;$(MSBuildProjectDirectory)\$(OutDir)*&quot; &quot;C:\ProgramData\Autodesk\ApplicationPlugins\$(MSBuildProjectName).bundle\$(FrameDir)\*&quot;&#xD;&#xA;" />
+    </Target>
+</Project>

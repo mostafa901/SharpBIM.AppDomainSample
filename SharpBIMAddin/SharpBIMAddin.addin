@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+    <AddIn Type="Command">
+        <Name>SharpBIMAddin</Name>
+        <Assembly>SharpBIMAddin.dll</Assembly>
+        <AddInId>EE1A3A71-5B32-4434-9A69-FCA875CDA854</AddInId>
+        <FullClassName>SharpBIMAddin.SharpBIMAddinCommand </FullClassName>
+        <VendorId>SharpBIM</VendorId>
+        <VendorDescription>SharpBIM, https://sharpbim.hashnode.dev</VendorDescription>
+    </AddIn>
+</RevitAddIns>

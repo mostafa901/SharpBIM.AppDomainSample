@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Revit" ProductType="Application" Name="Versioner" AppVersion="1.0.0"
+                    Description="SharpBIM" Author="Moustafa K. Elsayed"
+                    OnlineDocumentation="https://sharpbim.hashnode.dev/">
+
+    <CompanyDetails Name="SharpBIM" Url="https://sharpbim.hashnode.dev/" Email="arch.moustafa@gmail.com" Phone="+38669612373" />
+
+    <Components Description="Revit 2019">
+        <RuntimeRequirements OS="Win64" Platform="Revit|Revit Architecture|Revit Structure|Revit MEP" SeriesMin="R2019" SeriesMax="R2019" />
+        <ComponentEntry AppName="SharpBIMAddin" Version="1.0.0" ModuleName="Framework47/SharpBIMAddin.addin" AppDescription="SharpBIM" />
+    </Components>
+</ApplicationPackage>

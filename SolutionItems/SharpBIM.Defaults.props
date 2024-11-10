@@ -1,0 +1,30 @@
+﻿<Project >
+    <PropertyGroup>
+        <TargetFramework>net47</TargetFramework> 
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <RVersion>2019</RVersion>
+        <NeutralLanguage>en</NeutralLanguage>
+        <Company>https://github.com/mostafa901</Company>
+        <Product>SharpBIM</Product>
+        <Copyright>(c) SharpBIM</Copyright>
+        <Deterministic>false</Deterministic>
+        <GenerateAssemblyFileVersionAttribute>true</GenerateAssemblyFileVersionAttribute>
+        <AssemblyVersion>1.0.*</AssemblyVersion>
+        <PublishSingleFile>false</PublishSingleFile>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <UseWPF>true</UseWPF>
+        <UseWindowsForms>true</UseWindowsForms>
+        <LangVersion>latest</LangVersion>
+        <XamlDebuggingInformation>True</XamlDebuggingInformation>
+        <FrameDir>Framework47</FrameDir>
+        <OutputType>Library</OutputType>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <Authors>Moustafa K. Elsayed</Authors>
+        <RestorePackages>false</RestorePackages>
+        <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
+    <PropertyGroup>
+        <OutDir>bin\$(FrameDir)</OutDir> 
+    </PropertyGroup>
+ 
+</Project>

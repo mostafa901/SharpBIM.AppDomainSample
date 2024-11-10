@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpBIMAddin", "SharpBIMAddin.csproj", "{96297740-64F7-4B9F-8A67-6F0F981B12ED}"
+	ProjectSection(ProjectDependencies) = postProject
+		{828D685C-5F93-479E-87CE-9D7FC4FB9923} = {828D685C-5F93-479E-87CE-9D7FC4FB9923}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpBIM.AuthLogin", "..\SharpBIM.AuthLogin\SharpBIM.AuthLogin.csproj", "{828D685C-5F93-479E-87CE-9D7FC4FB9923}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpBIM.Interfaces", "..\SharpBIM.Interfaces\SharpBIM.Interfaces.csproj", "{8FBB3E5E-EDCE-49D8-A9D7-2C60636B815E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{46C4CF4B-DE30-48F0-B377-232C993737E3}"
+	ProjectSection(SolutionItems) = preProject
+		..\SolutionItems\SharpBIM.Defaults.props = ..\SolutionItems\SharpBIM.Defaults.props
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96297740-64F7-4B9F-8A67-6F0F981B12ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96297740-64F7-4B9F-8A67-6F0F981B12ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96297740-64F7-4B9F-8A67-6F0F981B12ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96297740-64F7-4B9F-8A67-6F0F981B12ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{828D685C-5F93-479E-87CE-9D7FC4FB9923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{828D685C-5F93-479E-87CE-9D7FC4FB9923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{828D685C-5F93-479E-87CE-9D7FC4FB9923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{828D685C-5F93-479E-87CE-9D7FC4FB9923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FBB3E5E-EDCE-49D8-A9D7-2C60636B815E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FBB3E5E-EDCE-49D8-A9D7-2C60636B815E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FBB3E5E-EDCE-49D8-A9D7-2C60636B815E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FBB3E5E-EDCE-49D8-A9D7-2C60636B815E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DF15BFE-624A-4BC2-91B9-2E5C2F10AE1D}
+	EndGlobalSection
+EndGlobal
